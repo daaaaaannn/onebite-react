@@ -1,0 +1,9 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* gap은 flex가 사용됐을때만 가능 */
+
+  width: 500px;
+  margin: 0 auto;
+}
