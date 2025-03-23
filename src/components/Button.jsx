@@ -1,15 +1,9 @@
-const Button = ({ children, text, color = 'black' }) => {
-  // onClick={() => {
-  //   console.log(text);
-  // }}
-  // 이벤트 객체
-  const onClickButton = () => {
-    console.log(text);
-  };
+import './Button.css';
+
+const Button = ({ text, type, onClick }) => {
   return (
-    <button onClick={onClickButton} style={{ color: color }}>
+    <button onClick={onClick} className={`Button Button_${type}`}>
       {text}
-      {children}
     </button>
   );
 };

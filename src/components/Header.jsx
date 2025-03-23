@@ -1,10 +1,12 @@
-const Header = () => {
+import './Header.css';
+
+const Header = ({ title, leftChild, rightChild }) => {
   return (
-    <header>
-      <h1>header</h1>
+    <header className="Header">
+      <div className="header_left">{leftChild}</div>
+      <div className="header_center">{title}</div>
+      <div className="header_right">{rightChild}</div>
     </header>
   );
 };
-// 컴포넌트 첫글자는 대문자로 작성해야함!!
-
 export default Header;
