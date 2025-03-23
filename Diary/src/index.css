@@ -1,6 +1,10 @@
 @font-face {
   font-family: 'prettyFont';
-  src: url('../public/온글잎\ 콘콘체.ttf');
+  src: url('/온글잎%20콘콘체.ttf') format('truetype');
+}
+
+body {
+  font-family: 'prettyFont', sans-serif;
 }
 
 html,
